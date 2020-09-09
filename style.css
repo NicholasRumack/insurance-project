@@ -1,0 +1,54 @@
+body{
+    background-color:#E5E5E5;
+    max-width: 80%;
+    margin: auto;
+}
+
+
+/*grid container för header*/
+.gcontainer{
+    display: grid;
+    grid-template-rows: repeat(2, 350px);
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas: 
+    "one two"
+    "one three";
+}
+
+/*boxar inuti grid container*/
+.box1{
+    background-color:#C7DDEA;
+    grid-area: one;
+}
+
+.box2{
+    background-color: #F17949;
+    grid-area: two;
+}
+
+.box3{
+    background-color: #FAB131;
+    grid-area: three;
+}
+
+/* class för navlistan*/
+.navlist{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 1rem 0;
+}
+
+/* class för nav items */
+.nav-item{
+    list-style: none;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: rgb(139, 139, 139);
+    
+}
