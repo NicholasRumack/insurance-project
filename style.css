@@ -15,19 +15,16 @@ body{
     "one three";
 }
 
-/*boxar inuti grid container*/
+/*boxar inuti gheader container*/
 .box1{
-    background-color:#C7DDEA;
     grid-area: one;
 }
 
 .box2{
-    background-color: #F17949;
     grid-area: two;
 }
 
 .box3{
-    background-color: #FAB131;
     grid-area: three;
 }
 
@@ -51,4 +48,21 @@ body{
     text-decoration: none;
     color: rgb(139, 139, 139);
     
+}
+
+/* färger */
+.blue{
+    background-color: #C7DDEA;
+}
+
+.red{
+    background-color: #F17949;
+}
+
+.yellow{
+    background-color: #FAB131;
+}
+
+.white {
+    color: white;
 }
