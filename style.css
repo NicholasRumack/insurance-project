@@ -6,7 +6,7 @@ body{
 
 
 /*grid container för header*/
-.gcontainer{
+.gheader{
     display: grid;
     grid-template-rows: repeat(2, 350px);
     grid-template-columns: repeat(2, 50%);
