@@ -122,6 +122,55 @@ body{
     margin-block-end: 0;
 }
 
+/*Grid för bild sectionen*/
+
+.maingrid {
+    padding: 2rem;
+    /*background-color: #A9A19E;*/
+  }
+
+.maingrid > ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    list-style-type: none;
+    background-color: white;
+    border-radius: .5rem;
+}
+
+.maingrid > ul > li > {
+    border: 1px solid #E2E2E2;
+    border-radius: .5rem;
+}
+
+.maingrid > ul > li > figure {
+    max-height: 354px;
+    overflow: hidden;
+    border-radius: .5rem;
+    position: relative;
+}
+
+.maingrid > ul > li > figure > img {
+    width: 100%;
+}
+
+.maingrid > section > button {
+    background-color: white;
+    border: none;
+    padding: 10px 36px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 20px;
+
+}
+
+.maingrid > ul > li > figure > p {
+    align-content: center;
+}
+
 /* class för navlistan*/
 .navlist{
     display: flex;
@@ -164,3 +213,55 @@ body{
 .white {
     color: white;
 }
+
+.bwhite {
+    background-color: white;
+}
+.darkgray {
+    background-color: #A9A19E;
+}
+/* Media queries */
+@media screen and (max-width:700px){
+
+    body{
+        max-width: 100%;
+    }
+    
+    .gheader{
+        grid-template-rows: repeat(4, 350px);
+        grid-template-columns: repeat(1, auto);
+        grid-template-areas: 
+        "one"
+        "one"
+        "two"
+        "three";
+    }
+    
+    .box1{
+        grid-template-rows: repeat(4, auto);
+        grid-template-columns: repeat(1, auto);
+    }
+    
+    .box1-item-1{
+        max-width: 100%;
+        grid-row: 1 / 1;
+        margin: 0;
+        padding: 10px;
+    }
+    
+    .box1-item-1 p{
+        font-size: 14px;
+    }
+    
+    .box1-item-2{
+        grid-row: 2 / 3;
+        max-width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+    
+    nav{
+        display: none;
+    }
+
+    }
