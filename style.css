@@ -121,43 +121,71 @@ body{
     margin-block-end: 0;
 }
 
-
-/*Start på Ramen för mitt delen
-
-.framegrid {
+.maingrid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-}
-
-.darkgray {
-    grid-column: 1/2;
-    grid-row: 1;
-}
-
-.yellow {
-    grid-column: 1/2;
-    grid-row: 2;
-}
-*/
-/*Grid för bild sectionen*/
-
-.imagegrid {
-    display: grid;
-    grid-template-columns: repeat(3, 33,3%);
-    grid-template-rows: repeat(4, 25%);
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(5, auto);
     padding: 1rem;
 }
-/*
-.imagegrid > figure {
-    display: flex;
-    align-self: center;
+
+.mitem1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    max-width: 50%;
+    margin-top: 3rem;
 }
-*/
-.imagegrid > figure > img {
-    max-height: 150px;
-    max-width: 236px;
-    position: relative;
+.mitem2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    max-width: 50%;
+    margin: auto;
+}
+.mitem3 {
+    grid-column: 2/3;
+    grid-row: 1/1;
+    margin: 200px;
+}
+
+.mitem4 {
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+.mitem5 {
+    grid-column: 1/3;
+    grid-row: 5/6;
+    text-align: center;
+    justify-content: end;
+    margin: 250px;
+}
+.mitem2 p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+.item5 > p {
+    max-width: 50%;
+}
+
+.fleximage {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+
+.fleximage > div > article{
+    background-color: white;
+    text-align: center;
+    max-width: 256px;
+    max-height: 308px;
+    border-radius: .5rem;
+}
+
+.fleximage > div {
+    text-align: center;
+    margin: 20px;
+
 }
 
 .imageframe {
@@ -166,56 +194,11 @@ body{
 }
 
 .textframe {
-    max-width: 256px;
-    max-height: 308px;
+    width: 256px;
+    height: 308px;
 }
 
-.child {
-    grid-column: 1/2;
-    grid-row: 1/3;
-    border-radius: .5rem;
-}
-
-.boxleft {
-    grid-column: 1;
-    grid-row: 2/4;
-    background-color: white;
-    border-radius: .5rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-
-.adult {
-    grid-column: 2/2;
-    grid-row: 1/3;
-    border-radius: .5rem;
-}
-
-.boxmid {
-    grid-column: 2;
-    grid-row: 2/4;
-    background-color: white;
-    border-radius: .5rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-
-.old {
-    grid-column: 3/4;
-    grid-row: 1/3;
-    border-radius: .5rem;
-}
-
-.boxright {
-    grid-column-start: 3;
-    grid-row: 2/4;
-    background-color: white;
-    border-radius: .5rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-
-.button {
+.jbutton {
     background-color: white;
     text-align: center;
     cursor: pointer;
@@ -361,7 +344,6 @@ body{
     
     .flex-box {
         margin: 0 auto;
-        max-width: 80%;
         display: flex;
         flex-wrap: wrap;
     }
@@ -430,7 +412,6 @@ body{
     */
     .button {
         margin: 0 auto;
-        max-width: 80%;
         height: 40px;
         display: flex;
     
@@ -442,7 +423,6 @@ body{
     .footer {
     
         margin: 0 auto;
-        max-width: 80%;
         height: 340px;
     
         background-color: #777574;
