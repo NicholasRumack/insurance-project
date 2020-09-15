@@ -130,6 +130,7 @@ body{
 
 .maingrid > ul {
     display: grid;
+    
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 1rem;
     list-style-type: none;
@@ -138,6 +139,7 @@ body{
 }
 
 .maingrid > ul > li > {
+    display: flex;
     border: 1px solid #E2E2E2;
     border-radius: .5rem;
     align-content: center;
