@@ -121,49 +121,71 @@ body{
     margin-block-end: 0;
 }
 
+
+
+
+
+
+
+
 /*Grid för bild sectionen*/
 
-.maingrid {
-    padding: 2rem;
-    /*background-color: #A9A19E;*/
-  }
-
-.maingrid > ul {
+.imagegrid {
     display: grid;
-    
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 1rem;
-    list-style-type: none;
-    background-color: white;
-    border-radius: .5rem;
+    grid-template-columns: repeat(3, minmax(320px, 1fr));
+    grid-template-rows: repeat(2, minmax(320px, 1fr));
+    padding: 1rem;
 }
 
-.maingrid > ul > li > {
-    display: flex;
-    border: 1px solid #E2E2E2;
-    border-radius: .5rem;
-    align-content: center;
-}
-
-.maingrid > ul > li > h3 {
-    align-items: center;
-}
-
-.maingrid > ul > li > figure {
-    max-height: 300px;
-    overflow: hidden;
-    border-radius: .5rem;
-    position: relative;
-}
-.maingrid > ul > li > p {
+.imagegrid > figure > img {
+    max-height: 22em;
+    max-width: 100%;
     align-self: center;
 }
-.maingrid > ul > li > figure > img {
-    width: 100%;
+.child {
+    grid-column: 1;
+    grid-row: 1;
+    border-radius: .5rem;
 
 }
 
-.maingrid > section > button {
+.boxchild {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: white;
+    border-radius: .5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+}
+
+.adult {
+    grid-column: 2;
+    grid-row: 1;
+    border-radius: .5rem;
+}
+.boxadult {
+    grid-column-start: 2;
+    grid-row: 2;
+    background-color: white;
+    border-radius: .5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.old {
+    grid-column: 3;
+    grid-row: 1;
+    border-radius: .5rem;
+}
+.boxold {
+    grid-column-start: 3;
+    grid-row: 2;
+    background-color: white;
+    border-radius: .5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.button {
     background-color: white;
     text-align: center;
     cursor: pointer;
@@ -176,7 +198,7 @@ body{
     color: black;
 }
 
-}
+
 
 
 
@@ -223,6 +245,10 @@ body{
 
 .white {
     color: white;
+}
+
+.darkgray {
+    background-color: #A9A19E;
 }
 
 /* Media queries */
