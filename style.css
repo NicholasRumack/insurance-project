@@ -133,7 +133,7 @@ body{
 .imagegrid {
     display: grid;
     grid-template-columns: repeat(3, minmax(320px, 1fr));
-    grid-template-rows: repeat(2, minmax(320px, 1fr));
+    grid-template-rows: repeat(4, minmax(320px, 1fr));
     padding: 1rem;
 }
 
@@ -143,8 +143,8 @@ body{
     align-self: center;
 }
 .child {
-    grid-column: 1;
-    grid-row: 1;
+    grid-column: 1/2;
+    grid-row: 1/3;
     border-radius: .5rem;
 
 }
@@ -160,21 +160,22 @@ body{
 }
 
 .adult {
-    grid-column: 2;
-    grid-row: 1;
+    grid-column: 2/3;
+    grid-row: 1/3;
     border-radius: .5rem;
 }
 .boxadult {
-    grid-column-start: 2;
+    grid-column: 2;
     grid-row: 2;
     background-color: white;
     border-radius: .5rem;
     margin-left: 1rem;
     margin-right: 1rem;
 }
+
 .old {
-    grid-column: 3;
-    grid-row: 1;
+    grid-column: 3/4;
+    grid-row: 1/3;
     border-radius: .5rem;
 }
 .boxold {
