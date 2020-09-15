@@ -176,7 +176,7 @@ body{
     border-radius: .5rem;
 }
 
-.boxchild {
+.boxleft {
     grid-column: 1;
     grid-row: 2/4;
     background-color: white;
@@ -191,7 +191,7 @@ body{
     border-radius: .5rem;
 }
 
-.boxadult {
+.boxmid {
     grid-column: 2;
     grid-row: 2/4;
     background-color: white;
@@ -206,7 +206,7 @@ body{
     border-radius: .5rem;
 }
 
-.boxold {
+.boxright {
     grid-column-start: 3;
     grid-row: 2/4;
     background-color: white;
