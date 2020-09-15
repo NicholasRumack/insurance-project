@@ -329,3 +329,123 @@ body{
     }
 
     }
+
+
+
+    
+/*sara*/
+
+    h3 {
+
+        font-family: Frank Ruhl Libre;
+    display: flex;
+    margin: 0%;
+    letter-spacing: -0.02em;
+        color: rgba(0, 0, 0, 0.4);
+    }
+    
+    h2 {
+    font-family: Frank Ruhl Libre;
+    letter-spacing: -0.02em;
+    
+        color: rgba(0, 0, 0, 0.8);
+    }
+    
+    p {
+        font-family: Fira Sans;
+        font-style: normal;
+    
+    color: rgba(0, 0, 0, 0.7);
+    }
+    
+    
+    .flex-box {
+        margin: 0 auto;
+        max-width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .f00 {
+        width: calc(100% / 3);
+        text-align: center;
+        box-sizing: border-box;
+        
+        background: #C7DDEA;
+    }
+    
+    .f01 {
+        width: calc(100%/3);
+        padding: 20px 5px;
+        text-align: center;
+        box-sizing: border-box;
+    
+        background: #FFFFFF;
+    
+    }
+    
+    .f02 {
+        width: calc(100%/3);
+        padding: 20px 5px;
+        text-align: center;
+        box-sizing: border-box;
+    
+        background: #EBEBEB;
+    
+    }
+    
+    .f03 {
+        width: calc(100%/3);
+        padding: 20px 5px;
+        text-align: center;
+        box-sizing: border-box;
+    
+        background: #FFFFFF;
+    
+    }
+    
+    .f04 {
+        width: calc(100%/3);
+        padding: 20px 5px;
+        text-align: center;
+        box-sizing: border-box;
+    
+        background: #F17949;
+    
+    }
+    
+    .f05 {
+        width: calc(100%/3);
+        padding: 20px 5px;
+        text-align: center;
+        box-sizing: border-box;
+    
+        background: #FFFFFF;
+    
+    }
+    /*
+    .material-icons {
+    
+    border: 2px solid rgba(0, 0, 0, 0.7);
+    }
+    */
+    .button {
+        margin: 0 auto;
+        max-width: 80%;
+        height: 40px;
+        display: flex;
+    
+        background-color: #a9a19e;
+        
+    }
+    
+    
+    .footer {
+    
+        margin: 0 auto;
+        max-width: 80%;
+        height: 340px;
+    
+        background-color: #777574;
+    
+    }
+    
