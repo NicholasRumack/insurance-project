@@ -161,12 +161,13 @@ body{
 }
 
 .imageframe {
-    max-width: 236px;
-    max-height: 150px;
+    width: 236px;
+    height: 150px;
 }
 
 .textframe {
     max-width: 256px;
+    max-height: 308px;
 }
 
 .child {
@@ -277,6 +278,10 @@ body{
 
 .darkgray {
     background-color: #A9A19E;
+}
+
+.grad-background {
+    background: linear-gradient(180deg, grey 50%,#FAB131 50%);
 }
 
 /* Media queries */
