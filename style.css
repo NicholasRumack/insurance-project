@@ -323,6 +323,10 @@ body{
     background-color: white;
 }
 
+.whitetext {
+    color: white;
+}
+
 .darkgray {
     background-color: #A9A19E;
 }
@@ -407,7 +411,7 @@ img {
 
 /*sara*/
 
-    h3 {
+    .flex-box > h3 {
 
         font-family: Frank Ruhl Libre;
     display: flex;
@@ -417,14 +421,14 @@ img {
         color: rgba(0, 0, 0, 0.4);
     }
     
-    h2 {
+    .flex-box > h2 {
     font-family: Frank Ruhl Libre;
     letter-spacing: -0.02em;
     
         color: rgba(0, 0, 0, 0.8);
     }
     
-    p {
+    .flex-box > p {
         font-family: Fira Sans;
         font-style: normal;
     
