@@ -320,7 +320,7 @@ body{
 }
 
 .white {
-    color: white;
+    background-color: white;
 }
 
 .darkgray {
@@ -329,6 +329,31 @@ body{
 
 .grad-background {
     background: linear-gradient(180deg, grey 50%,#FAB131 50%);
+}
+
+
+/* Bilder till main*/
+.figure {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 230px);
+    justify-content: center;
+}
+h4 {
+    display: block;
+    
+}
+.container {
+    margin: 15px;
+    text-align: center;
+}
+
+img {
+    width: 200px;
+    height: 150px;
+    margin-top: -20px;
+    padding: 0 25% 0 25%;
+    object-fit: cover;
+    object-position: 0px 30px;
 }
 
 /* Media queries */
@@ -388,6 +413,7 @@ body{
     display: flex;
     margin: 0%;
     letter-spacing: -0.02em;
+    text-align: center;
         color: rgba(0, 0, 0, 0.4);
     }
     
@@ -477,7 +503,7 @@ body{
     .button {
         margin: 0 auto;
         height: 40px;
-        display: flex;
+        text-align: center;
     
         background-color: #a9a19e;
         
