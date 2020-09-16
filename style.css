@@ -332,7 +332,7 @@ body{
 
 
 
-    
+
 /*sara*/
 
     h3 {
@@ -361,7 +361,6 @@ body{
     
     .flex-box {
         margin: 0 auto;
-        max-width: 80%;
         display: flex;
         flex-wrap: wrap;
     }
@@ -430,7 +429,6 @@ body{
     */
     .button {
         margin: 0 auto;
-        max-width: 80%;
         height: 40px;
         display: flex;
     
@@ -442,7 +440,6 @@ body{
     .footer {
     
         margin: 0 auto;
-        max-width: 80%;
         height: 340px;
     
         background-color: #777574;
