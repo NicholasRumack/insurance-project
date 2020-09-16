@@ -126,7 +126,7 @@ body{
 .maingrid {
     display: grid;
     grid-template-columns: repeat(12, auto);
-    grid-template-rows: repeat(8, 12,5%);
+    grid-template-rows: repeat(8, auto);
     padding: 1rem;
 }
 
@@ -151,12 +151,13 @@ body{
 
 .mitem4 {
     grid-column: 1/10;
-    grid-row: 2/3;
+    grid-row: 2/5;
+    justify-content: center;
 }
 
 .mitem5 {
     grid-column: 3/9;
-    grid-row: 4/8;
+    grid-row: 6/8;
     text-align: center;
     justify-content: end;
 }
@@ -183,14 +184,6 @@ body{
     font-size: 11px;
 }
 
-.fleximage {
-    display: flex;
-    flex-flow: row wrap;
-    align-content: space-between;
-    justify-content: center;
-    align-items: center;
-}
-
 .fleximage > div > article{
     background-color: white;
     text-align: center;
@@ -198,19 +191,61 @@ body{
     max-height: 308px;
     border-radius: .5rem;
 }
-
 .fleximage > div {
     text-align: center;
     margin: 20px;
 
 }
-
 .imageframe {
     width: 236px;
     height: 150px;
 }
+/*Slutet på main griden*/
+/*Nested grid i mitten för att lägga lådorna rätt*/
+.nestedgrid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
+}
+.nestedgrid {
+    display: flex;
+    flex-flow: row wrap;
+}
+.iimage1 {
+    grid-column: 1/1;
+    grid-row: 1/1;
+    border-radius: .5rem;
+    justify-self: center;
 
+}
+.iimage2 {
+    grid-column: 1/1;
+    grid-row: 3/4;
+    padding: 10px;
+}
+.iimage3 {
+    grid-column: 2/2;
+    grid-row: 1/2;
+    border-radius: .5rem;
 
+}
+.iimage4 {
+    grid-column: 2/2;
+    grid-row: 2/3;
+}
+.iimage5 {
+    grid-column: 3/3;
+    grid-row: 1/2;
+    border-radius: .5rem;
+
+}
+.iimage6 {
+    grid-column: 3/3;
+    grid-row: 3/4;
+}
+
+/*Slut på nested grid*/
+/*Knappen för body delen*/
 .jbutton {
     background-color: white;
     text-align: center;
@@ -223,10 +258,6 @@ body{
     transition: .2s transform ease-in-out;
     color: black;
 }
-
-
-/*Slutet på image griden*/
-
 
 
 /* class för navlistan*/
