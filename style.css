@@ -172,7 +172,7 @@ body{
 }
 
 .item5 > p {
-    max-width: 50%;
+    max-width: 60%;
     font-size: 14px;
 }
 
@@ -183,7 +183,11 @@ body{
 .textfram > p {
     font-size: 11px;
 }
-
+.fleximage > div > article > div > img{
+    width: 50%;
+    max-height: 150px;
+    object-fit: cover;
+}
 .fleximage > div > article{
     background-color: white;
     text-align: center;
