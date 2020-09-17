@@ -360,18 +360,11 @@ html {
   /*sara*/
     .flex-box {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       justify-content: center;
       text-align: center;
     }
-  
-    .flex-box > h3 {
-      font-family: Frank Ruhl Libre;
-      display: grid;
-      letter-spacing: -0.02em;
-      color: rgba(0, 0, 0, 0.4);
-    }
-    
+
     .flex-box > h2 {
       font-family: Frank Ruhl Libre;
       letter-spacing: -0.02em;
@@ -379,29 +372,32 @@ html {
     }
     
     .flex-box > p {
-      font-family: Fira Sans;
       font-style: normal;
       color: rgba(0, 0, 0, 0.7);
     }
 
-    /*
-    .material-icons {
-    
-    border: 2px solid rgba(0, 0, 0, 0.7);
+    .numbers {
+      font-family: Frank Ruhl Libre;
+      letter-spacing: -0.02em;
+      margin: 10px;
+      color: rgba(0, 0, 0, 0.4);
+      text-align: left;
     }
-    */
+
     .button {
         margin: 0 auto;
-        height: 40px;
+        height: 65px;
         text-align: center;
     
         background-color: #a9a19e;
-        
+    }
+
+    .arrow {
+      image-orientation: inherit;
     }
     
     
     .footer {
-    
         margin: 0 auto;
         height: 340px;
     
