@@ -395,94 +395,32 @@ html {
   }
   
   /*sara*/
+    .flex-box {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+      justify-content: center;
+      text-align: center;
+    }
   
     .flex-box > h3 {
-  
-        font-family: Frank Ruhl Libre;
-    display: flex;
-    margin: 0%;
-    letter-spacing: -0.02em;
-    text-align: center;
-        color: rgba(0, 0, 0, 0.4);
+      font-family: Frank Ruhl Libre;
+      display: grid;
+      letter-spacing: -0.02em;
+      color: rgba(0, 0, 0, 0.4);
     }
     
     .flex-box > h2 {
-    font-family: Frank Ruhl Libre;
-    letter-spacing: -0.02em;
-    
-        color: rgba(0, 0, 0, 0.8);
+      font-family: Frank Ruhl Libre;
+      letter-spacing: -0.02em;
+      color: rgba(0, 0, 0, 0.8);
     }
     
     .flex-box > p {
-        font-family: Fira Sans;
-        font-style: normal;
-    
-    color: rgba(0, 0, 0, 0.7);
+      font-family: Fira Sans;
+      font-style: normal;
+      color: rgba(0, 0, 0, 0.7);
     }
-    
-    
-    .flex-box {
-        margin: 0 auto;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .f00 {
-        width: calc(100% / 3);
-        text-align: center;
-        box-sizing: border-box;
-        
-        background: #C7DDEA;
-    }
-    
-    .f01 {
-        width: calc(100%/3);
-        padding: 20px 5px;
-        text-align: center;
-        box-sizing: border-box;
-    
-        background: #FFFFFF;
-    
-    }
-    
-    .f02 {
-        width: calc(100%/3);
-        padding: 20px 5px;
-        text-align: center;
-        box-sizing: border-box;
-    
-        background: #EBEBEB;
-    
-    }
-    
-    .f03 {
-        width: calc(100%/3);
-        padding: 20px 5px;
-        text-align: center;
-        box-sizing: border-box;
-    
-        background: #FFFFFF;
-    
-    }
-    
-    .f04 {
-        width: calc(100%/3);
-        padding: 20px 5px;
-        text-align: center;
-        box-sizing: border-box;
-    
-        background: #F17949;
-    
-    }
-    
-    .f05 {
-        width: calc(100%/3);
-        padding: 20px 5px;
-        text-align: center;
-        box-sizing: border-box;
-    
-        background: #FFFFFF;
-    
-    }
+
     /*
     .material-icons {
     
