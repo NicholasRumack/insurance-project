@@ -128,12 +128,12 @@ html {
   }
   
   
-  /*Main grid start*/
-  .maingrid {
+/*Main grid start*/
+.maingrid {
     display: grid;
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(4, auto);
- }
+  }
   .mitem1 {
     grid-column: 1/2;
     grid-row: 1/2;
@@ -143,7 +143,7 @@ html {
     align-items: center;
     justify-content: center;
     max-width: 50%;
-
+  
   }
   .mitem2 {
     grid-column: 1/2;
@@ -162,8 +162,10 @@ html {
   }
   
   .mitem4 {
-    grid-column: 1/3;
+    grid-column: 1/ span 3;
     grid-row: 3/4;
+    margin: 100px 50px 50px 50px;
+    
   }
   
   .mitem5 {
@@ -177,12 +179,12 @@ html {
     margin-right: 25%;
     margin-bottom: 10%;
   }
-  .mitem2 p {
+  .mitem2 > p {
     font-size: 20px;
     line-height: 1.6;
   }
   
-  .item5 h1 {
+  .item5 > h1 {
     font-size: 50px;
   }
   
@@ -195,20 +197,15 @@ html {
     font-size: 14px;
   }
   
-  .fleximage > div > image{
-    background-color: white;
-    max-width: 256px;
-    max-height: 308px;
-    border-radius: .5rem;
-  }
-  
   .imageframe {
     width: 236px;
     height: 150px;
     margin-top: -30px;
+    margin-left: 10px;
+    margin-right: 10px;
     border-radius: .5rem;
     align-content: center;
-
+  
   }
   .textframe {
     background-color: white;
@@ -220,7 +217,7 @@ html {
     margin-left: 10px;
     margin-right: 10px;
     align-items: center;
-    flex-direction: column;
+  
   }
   .imgdesc {
     display: flex;
@@ -260,44 +257,12 @@ html {
       color: rgba(0, 0, 0, 0.6);
   }
   /*Slutet på main griden*/
-  /*Nested grid i mitten för att lägga lådorna rätt*/
-  .nestedgrid {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(5, auto);
-    list-style: none;
+  .hidden {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
   }
   
-  .wrap {
-    flex-wrap: wrap;
-  }
-  
-  .iimage1 {
-    display: flex;
-    grid-column: 1/1;
-    grid-row: 1/2;
-    border-radius: .5rem;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  .iimage2 {
-    display: flex;
-    grid-column: 2/2;
-    grid-row: 1/2;
-    border-radius: .5rem;
-    margin-left: 20px;
-    margin-right: 20px;
-    flex-wrap: wrap;
-  }
-  .iimage3 {
-    display: flex;
-    grid-column: 3/3;
-    grid-row: 1/2;
-    border-radius: .5rem;
-    margin-left: 20px;
-    margin-right: 20px;
-    flex-wrap: wrap;
-  }
   
   /*Slut på nested grid*/
   
@@ -513,7 +478,9 @@ html {
     body{
         max-width: 100%;
     }
-    
+    .grad-background {
+        background: linear-gradient(180deg, #A9A19E 60%,#FAB131 40%);
+      }
     .gheader{
         grid-template-rows: repeat(4, 350px);
         grid-template-columns: repeat(1, auto);
