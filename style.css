@@ -36,11 +36,14 @@ body{
   .box1-item-1 h1{
     font-size: 45px;
     margin-block-end: 0;
+    font-family: 'Frank Ruhl Libre';
+    font-weight: 900; /*funkar inte på något sätt?*/
   }
   
   .box1-item-1 p{
     font-size: 14px;
     line-height: 1.6;
+    font-family: 'Fira Sans';
   }
   
   /*class för knapp inuti box1*/
@@ -63,6 +66,7 @@ body{
     transition: .2s transform ease-in-out;
     color: black;
     font-size: 10px;
+    font-family: 'Fira Sans';
   }
   
   .box1-item-2 button:hover{
@@ -97,11 +101,13 @@ body{
   .box2 h2{
     font-size: 45px;
     margin-block-start: 0;
+    font-family: 'Frank Ruhl Libre';
   }
   
   .box2 p{
     font-size: 16px;
     margin-block-end: 0;
+    font-family: 'Fira Sans';
   }
   
   /*box3 inuti gheader container*/
@@ -116,13 +122,52 @@ body{
   .box3 h2{
     font-size: 45px;
     margin-block-start: 0;
+    font-family: 'Frank Ruhl Libre';
   }
   
   .box3 p{
     font-size: 16px;
     margin-block-end: 0;
+    font-family: 'Fira Sans';
   }
   
+    /* class för navlistan*/
+    .navlist{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin: auto;
+      padding: 2rem;
+      justify-content: space-around;
+      max-width:62%;
+      font-weight: bold;
+    }
+    /* class för navlistan*/
+    .navlist{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin: auto;
+      padding: 2rem;
+      justify-content: space-around;
+      max-width:62%;
+      font-weight: bold;
+    }
+    
+    /* class för nav items */
+    .nav-item{
+      list-style: none;
+    }
+    
+    .nav-item a{
+      text-decoration: none;
+      color: rgb(139, 139, 139);
+      font-family: 'Fira Sans';
+    }
+    
+    .nav-item a:hover{
+      color: black;
+    }
   
 /*Main grid start*/
 .maingrid {
@@ -286,42 +331,6 @@ body{
     font-weight: bold;
   }
   
-  /* class för navlistan*/
-  .navlist{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: auto;
-    padding: 2rem;
-    justify-content: space-around;
-    max-width:62%;
-    font-weight: bold;
-  }
-  /* class för navlistan*/
-  .navlist{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: auto;
-    padding: 2rem;
-    justify-content: space-around;
-    max-width:62%;
-    font-weight: bold;
-  }
-  
-  /* class för nav items */
-  .nav-item{
-    list-style: none;
-  }
-  
-  .nav-item a{
-    text-decoration: none;
-    color: rgb(139, 139, 139);
-  }
-  
-  .nav-item a:hover{
-    color: black;
-  }
   
   /* färger */
   .blue{
@@ -439,8 +448,9 @@ body{
       text-align: center;
       flex-basis: 40%;
       margin-top: 3rem;
+      font-family: 'Frank Ruhl Libre';
   }
-  
+
   .cheader-flex-item2{
       justify-self: flex-start;
       flex-basis: 30%;
@@ -469,6 +479,7 @@ body{
   .cmain-flex-item1 h1{
       font-size: 45px;
       margin-top: 0;
+      font-family: 'Frank Ruhl Libre';
   }
   
   .cmain-flex-item2{
@@ -482,6 +493,7 @@ body{
       color: #e0dad8;
       line-height: 2rem;
       height: 300px;
+      font-family: 'fira sans';
   }
   
   input[type=text]{
@@ -489,6 +501,7 @@ body{
       border: 0px solid #A9A19E;
       display: block;
       min-width: 70%;
+      font-family: 'fira sans';
   }
 
   /*container för andra textrutan i formuläret*/
@@ -499,6 +512,7 @@ body{
     border: none;
     padding: 1rem;
     resize: none;
+    font-family: 'fira sans';
   }
 
   /*container för button i formuläret*/
@@ -521,6 +535,7 @@ body{
     color: black;
     font-size: 10px;
     margin-top: 2rem;
+    font-family: 'fira sans';
   }
 
   .cmain-flex-item2 button:hover{
@@ -531,6 +546,36 @@ body{
   .map{
       background-image: url("img/map.png");
       min-height: 400px;
+      display: flex;
+      justify-content: center;
+  }
+
+  .visit{
+    background-color: #FAB131;
+    flex-basis: 30%;
+    height: 12rem;
+    padding: 0 10px 0 15px ;
+    margin-top: 5%;
+  }
+
+  .visit h1{
+    font-size: 45px;
+    margin: 0;
+    padding-top: 10px;
+    font-family: 'Frank Ruhl Libre';
+  }
+
+  .visit p{
+    margin: 12px 0 0 0;
+    font-size: 15px;
+    padding-left: 10px;
+    font-family: 'fira sans';
+  }
+
+  .pilbox{
+    flex-basis: 50%;
+    align-self: center;
+    margin-left: 3rem;
   }
   
     /* Media queries */
@@ -624,5 +669,47 @@ body{
     .button {
       display: none;
     }
-  
+    
+
+    /*contact site @media*/
+    .visit{
+      margin-left: 1rem;
+    }
+
+    .visit h1{
+      font-size: 25px;
+    }
+
+    .visit p{
+      font-size: 10px;
+    }
+
+    .contact-header h1{
+      font-size: 35px;
+    }
+
+    .cheader-flex-item1{
+      align-self: flex-start;
+      justify-self: flex-start;
+      margin-left: 1rem;
+    }
+
+    .cmain-flexbox{
+      flex-direction: column;
+    }
+
+    .cmain-flex-item1{
+      margin: 1rem 0 0 1rem;
+    }
+
+    .cmain-flex-item1 h1{
+      font-size: 40px;
+      margin: 0;
+    }
+
+    .cmain-flex-item2{
+      margin-top: 1rem;
+      margin-left: 1rem;
+    }
+
     }
