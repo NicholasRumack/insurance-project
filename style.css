@@ -4,7 +4,7 @@ html {
   
   body{
     background-color:#E5E5E5;
-    max-width: 80%;
+    max-width: 60%;
     margin: auto;
     font-family: Fira Sans;
   }
@@ -13,7 +13,7 @@ html {
   /*grid container för header*/
   .gheader{
     display: grid;
-    grid-template-rows: repeat(2, 350px);
+    grid-template-rows: repeat(autofill, 250px);
     grid-template-columns: repeat(2, 50%);
     grid-template-areas: 
     "one two"
@@ -26,35 +26,33 @@ html {
     display: grid;
     align-items: center;
     justify-content: center;
-    grid-template-rows: repeat(4, 25%);
+    grid-template-rows: repeat(autofill);
     grid-template-columns: repeat(2, 50%);
   }
   
   /*class för texten inuti box1*/
   .box1-item-1{
     grid-column: 1 / 3;
-    grid-row: 1 / 3;
-    max-width: 50%;
+    max-width: 60%;
     margin: auto;
-    margin-top: 3rem;
   }
   
   .box1-item-1 h1{
-    font-size: 50px;
+    font-size: 45px;
     margin-block-end: 0;
   }
   
   .box1-item-1 p{
-    font-size: 20px;
+    font-size: 14px;
     line-height: 1.6;
   }
   
   /*class för knapp inuti box1*/
   .box1-item-2{
-    grid-column: 1;
-    grid-row: 3 / 4;
-    max-width: 0;
-    margin: auto;
+    justify-self: end;
+    min-width: 60%;
+    max-width: 60%;
+    margin-top: -50%;
   }
   
   .box1-item-2 button{
@@ -62,12 +60,13 @@ html {
     text-align: center;
     cursor: pointer;
     border: none;
-    padding: 20px;
-    min-width: 12rem;
+    padding: 14px;
+    min-width: 9rem;
     border-radius: 3rem;
     font-weight: bold;
     transition: .2s transform ease-in-out;
     color: black;
+    font-size: 10px;
   }
   
   .box1-item-2 button:hover{
@@ -76,16 +75,17 @@ html {
   
   /*class för img inuti box1*/
   .box1-item-3{
-    display: flex;
-    grid-column: 1 / 3;
-    grid-row: 3 / 5;
-    justify-self: flex-end;
-    margin-right: 1rem;
+    grid-column: 2 / 3;
+    grid-row: 2 / 5;
+    align-self: end;
+    justify-self: end;
+    padding-right: 1rem;
+    display: contents;
   }
   
   .box1-item-3 img{
-    max-height: 22em;
     max-width: 100%;
+    object-fit: cover;
   }
   
   
@@ -99,7 +99,7 @@ html {
   }
   
   .box2 h2{
-    font-size: 50px;
+    font-size: 45px;
     margin-block-start: 0;
   }
   
@@ -118,7 +118,7 @@ html {
   }
   
   .box3 h2{
-    font-size: 50px;
+    font-size: 45px;
     margin-block-start: 0;
   }
   
@@ -128,28 +128,29 @@ html {
   }
   
   
-  /*Main grid start*/
-  .maingrid {
+/*Main grid start*/
+.maingrid {
     display: grid;
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(4, auto);
- }
+  }
   .mitem1 {
     grid-column: 1/2;
     grid-row: 1/2;
     margin: auto;
     margin-top: 6rem;
     display: flex;
-    align-items: center;
     justify-content: center;
     max-width: 50%;
-
   }
   .mitem2 {
     grid-column: 1/2;
     grid-row: 2/3;
-    margin: 10% 20% 20% 25%;
     max-width: 50%;
+    margin-left: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .mitem3 {
     display: flex;
@@ -158,14 +159,22 @@ html {
     grid-column: 2/3;
     grid-row: 1/3;
     max-width: 50%;
-    margin-top: -50px;
+    margin-top: 15%;
   }
   
   .mitem4 {
-    grid-column: 1/3;
+    grid-column: 1/ span 3;
     grid-row: 3/4;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
-  
+  .wrap    { 
+    flex-wrap: wrap row;
+  }  
+
   .mitem5 {
     grid-column: 1/3;
     grid-row: 4/6;
@@ -177,12 +186,12 @@ html {
     margin-right: 25%;
     margin-bottom: 10%;
   }
-  .mitem2 p {
+  .mitem2 > p {
     font-size: 20px;
     line-height: 1.6;
   }
   
-  .item5 h1 {
+  .item5 > h1 {
     font-size: 50px;
   }
   
@@ -194,21 +203,16 @@ html {
   .maingrid p {
     font-size: 14px;
   }
-  
-  .fleximage > div > image{
-    background-color: white;
-    max-width: 256px;
-    max-height: 308px;
-    border-radius: .5rem;
-  }
-  
+
   .imageframe {
     width: 236px;
     height: 150px;
     margin-top: -30px;
+    margin-left: 10px;
+    margin-right: 10px;
     border-radius: .5rem;
     align-content: center;
-
+  
   }
   .textframe {
     background-color: white;
@@ -216,11 +220,10 @@ html {
     max-width: 256px;
     min-height: 308px;
     border-radius: .5rem;
-    margin-top: -75px;
+    margin-bottom: 50px;
     margin-left: 10px;
     margin-right: 10px;
-    align-items: center;
-    flex-direction: column;
+  
   }
   .imgdesc {
     display: flex;
@@ -260,44 +263,12 @@ html {
       color: rgba(0, 0, 0, 0.6);
   }
   /*Slutet på main griden*/
-  /*Nested grid i mitten för att lägga lådorna rätt*/
-  .nestedgrid {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(5, auto);
-    list-style: none;
+  .hidden {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
   }
   
-  .wrap {
-    flex-wrap: wrap;
-  }
-  
-  .iimage1 {
-    display: flex;
-    grid-column: 1/1;
-    grid-row: 1/2;
-    border-radius: .5rem;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  .iimage2 {
-    display: flex;
-    grid-column: 2/2;
-    grid-row: 1/2;
-    border-radius: .5rem;
-    margin-left: 20px;
-    margin-right: 20px;
-    flex-wrap: wrap;
-  }
-  .iimage3 {
-    display: flex;
-    grid-column: 3/3;
-    grid-row: 1/2;
-    border-radius: .5rem;
-    margin-left: 20px;
-    margin-right: 20px;
-    flex-wrap: wrap;
-  }
   
   /*Slut på nested grid*/
   
@@ -532,7 +503,9 @@ html {
     body{
         max-width: 100%;
     }
-    
+    .grad-background {
+        background: linear-gradient(180deg, #A9A19E 75%,#FAB131 25%);
+      }
     .gheader{
         grid-template-rows: repeat(4, 350px);
         grid-template-columns: repeat(1, auto);
@@ -543,29 +516,27 @@ html {
         "three";
     }
     
-    .box1{
-        grid-template-rows: repeat(4, auto);
-        grid-template-columns: repeat(1, auto);
+    .box1-item-1, .box1-item-2{
+      max-width: 90%;
+      min-width: 90%;
+      padding: 0;
     }
-    
-    .box1-item-1{
-        max-width: 100%;
-        grid-row: 1 / 1;
-        margin: 0;
-        padding: 10px;
-    }
-    
-    .box1-item-1 p{
-        font-size: 14px;
-    }
-    
+
     .box1-item-2{
-        grid-row: 2 / 3;
-        max-width: 100%;
-        margin: 0;
-        padding: 10px;
+      grid-column: 1;
+      grid-row: 2;
+      margin: 0;
     }
-    
+
+    .box1-item-3{
+      display: block;
+      max-width: 85%;
+      grid-column: 1/3;
+      grid-row: 3;
+      overflow: auto;
+      margin-bottom: -1%;
+    }
+
     nav{
         display: none;
     }
