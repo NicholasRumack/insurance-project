@@ -356,7 +356,6 @@ body{
     object-position: 0px 30px;
   }
   
-  /*sara*/
     .gridbox {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -368,13 +367,13 @@ body{
       min-height: 250px;
     }
   
-    .gridbox > h2 {
+    .gridbox .box > h2 {
       font-family: 'Frank Ruhl Libre';
       letter-spacing: -0.02em;
       color: rgba(0, 0, 0, 0.8);
     }
     
-    .gridbox > p {
+    .gridbox .box> p {
       font-style: normal;
       color: rgba(0, 0, 0, 0.7);
     }
@@ -477,17 +476,7 @@ body{
       background-image: url("img/map.png");
       min-height: 400px;
   }
-  
-  
-  /*contact footer
-  .cfooter{
-      min-height: 300px;
-      background-color: grey;
-  }
-  */
-  
-    
-  
+
     /* Media queries */
   @media screen and (max-width:700px){
   
