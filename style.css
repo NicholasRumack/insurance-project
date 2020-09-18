@@ -2,7 +2,7 @@ html {
     font-family: Fira sans;
   }
   
-  body {
+  body{
     background-color:#E5E5E5;
     max-width: 60%;
     margin: auto;
@@ -372,7 +372,7 @@ html {
       }
 
     .box {
-      min-height: 300px;
+      min-height: 250px;
     }
 
     .flex-box > h2 {
@@ -538,4 +538,14 @@ html {
     nav{
         display: none;
     }
+
+    .flex-box {
+      max-width: 100%;
+      min-width: 100%;
+    }
+
+    .button {
+      display: none;
+    }
+
     }
