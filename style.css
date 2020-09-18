@@ -364,9 +364,13 @@
   /*sara*/
     .flex-box {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       justify-content: center;
       text-align: center;
+      }
+
+    .box {
+      min-height: 250px;
     }
 
     .flex-box > h2 {
@@ -402,9 +406,7 @@
     
     
     .footer {
-        margin: 0 auto;
-        height: 340px;
-    
+        height: 300px;
         background-color: #777574;
     
     }
@@ -482,12 +484,12 @@
   }
 
 
-/*contact footer*/
+/*contact footer
   .cfooter{
       min-height: 300px;
       background-color: grey;
   }
-
+*/
 
     
   
@@ -581,5 +583,13 @@
       margin-right: 5%;
       margin-bottom: 15%;
   }
+    .flex-box {
+      max-width: 100%;
+      min-width: 100%;
+    }
+
+    .button {
+      display: none;
+    }
 
     }
