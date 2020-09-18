@@ -418,7 +418,6 @@ body{
         margin: 0 auto;
         height: 65px;
         text-align: center;
-    
         background-color: #a9a19e;
     }
   
@@ -547,6 +546,7 @@ body{
 /*flexbox för map*/
   .map{
       background-image: url("img/map.png");
+      background-size: cover;
       min-height: 400px;
       display: flex;
       justify-content: center;
