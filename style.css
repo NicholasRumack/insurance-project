@@ -398,6 +398,10 @@ html {
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       justify-content: center;
       text-align: center;
+      }
+
+    .box {
+      min-height: 300px;
     }
 
     .flex-box > h2 {
@@ -565,5 +569,4 @@ html {
     nav{
         display: none;
     }
-  
     }
