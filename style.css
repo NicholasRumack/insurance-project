@@ -451,7 +451,7 @@ body{
   }
   
   .cmain-flex-item1 h1{
-      font-size: 2.7rem;
+      font-size: 45px;
       margin-top: 0;
   }
   
@@ -461,32 +461,61 @@ body{
   }
   
   /*formulär*/
+
   .cmain-flex-item2 label{
       color: #e0dad8;
+      line-height: 2rem;
+      height: 300px;
   }
   
   input[type=text]{
-      padding: 12px;
-      border: 2px solid #A9A19E;
+      padding: 1rem;
+      border: 0px solid #A9A19E;
       display: block;
-  
+      min-width: 70%;
   }
-  
-  /*flexbox för map*/
+
+  /*container för andra textrutan i formuläret*/
+  .ftextbox{
+    height: 170px;
+    min-width: 70%;
+    display: block;
+    border: none;
+    padding: 1rem;
+    resize: none;
+  }
+
+  /*container för button i formuläret*/
+  .contact-button-container{
+    width: 75%;
+    justify-content: flex-end;
+    display: flex;
+  }
+
+  .cmain-flex-item2 button{
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    padding: 1rem;
+    min-width: 9rem;
+    border-radius: 3rem;
+    font-weight: bold;
+    transition: .2s transform ease-in-out;
+    color: black;
+    font-size: 10px;
+    margin-top: 2rem;
+  }
+
+  .cmain-flex-item2 button:hover{
+    transform: scale(1.05);
+  }
+
+/*flexbox för map*/
   .map{
       background-image: url("img/map.png");
       min-height: 400px;
   }
-  
-  
-  /*contact footer
-  .cfooter{
-      min-height: 300px;
-      background-color: grey;
-  }
-  */
-  
-    
   
     /* Media queries */
   @media screen and (max-width:700px){
