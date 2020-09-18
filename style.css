@@ -357,7 +357,7 @@ body{
   }
   
   /*sara*/
-    .flex-box {
+    .gridbox {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       justify-content: center;
@@ -368,13 +368,13 @@ body{
       min-height: 250px;
     }
   
-    .flex-box > h2 {
+    .gridbox > h2 {
       font-family: 'Frank Ruhl Libre';
       letter-spacing: -0.02em;
       color: rgba(0, 0, 0, 0.8);
     }
     
-    .flex-box > p {
+    .gridbox > p {
       font-style: normal;
       color: rgba(0, 0, 0, 0.7);
     }
